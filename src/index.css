@@ -1,0 +1,63 @@
+html,
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f8f8;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+/* include border and padding in element width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* full-sized  container that fills up the page */
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.bannerImgs, .bannerImgsAr {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.bannerImgs img {
+  position: absolute;
+  top: 70px;
+  left: 39%;
+  transform: translateX(5%);
+  width: 220px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bannerImgsAr img {
+  position: absolute;
+  top: 70px;
+  right: 42%;
+  width: 220px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+.react-datepicker__input-container {
+  display: flex;
+  align-items: center;
+}
